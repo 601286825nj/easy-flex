@@ -1,39 +1,59 @@
-fr {
+efr,
+.efr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+efc,
+.efc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+efr1,
+.efr1 {
   flex: 1;
   display: flex;
   flex-direction: row;
-  width: inherit;
-  height: inherit;
   flex-wrap: wrap;
 }
-fv {
+efc1,
+.efc1 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: inherit;
-  height: inherit;
   flex-wrap: nowrap;
 }
-f0 {
+ef0,
+.ef0 {
   flex: 0;
 }
-f1 {
+ef1,
+.ef1 {
   flex: 1;
 }
-f2 {
+ef2,
+.ef2 {
   flex: 2;
 }
-f3 {
+ef3,
+.ef3 {
   flex: 3;
 }
-f4 {
+ef4,
+.ef4 {
   flex: 4;
 }
-f5 {
+ef5,
+.ef5 {
   flex: 5;
 }
-f6 {
+ef6,
+.ef6 {
   flex: 6;
+}
+.ef-gap > * {
+  margin: 6px;
 }
 .column-flex-100h {
   display: flex;
@@ -41,72 +61,69 @@ f6 {
   height: 100%;
 }
 /*π*/
-.pi-flex-content {
+.ef-pi {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.pi-flex-content > :nth-child(2) {
+.ef-pi > :nth-child(2) {
   flex: 1;
   display: flex;
   height: 100%;
   margin: 0;
   overflow: auto;
 }
-.pi-flex-content > :nth-child(2) > :not(:last-child) {
+.ef-pi > :nth-child(2) > :not(:last-child) {
   margin-right: 6px;
 }
-.pi-flex-content > :nth-child(2) > * {
+.ef-pi > :nth-child(2) > * {
   height: 100%;
   margin: 0;
 }
-.pi-flex-content > :not(:first-child) {
+.ef-pi > :not(:first-child) {
   margin: 6px 0 0 0;
 }
 /*T*/
-.t-flex-content {
+.ef-t {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.t-flex-content > :nth-child(2) {
+.ef-t > :nth-child(2) {
   flex: 1;
   overflow: auto;
   margin: 6px 0 0 0;
 }
-.t-flex-content > :nth-child(2) > * {
+.ef-t > :nth-child(2) > * {
   margin: 0;
 }
 /*E*/
-.e-flex-content {
+.ef-e {
   display: flex;
   height: 100%;
 }
-.e-flex-content > :nth-child(1) {
+.ef-e > :nth-child(1) {
   flex: 1;
   min-width: 25%;
   margin-right: 6px;
 }
-.e-flex-content > :nth-child(2) {
+.ef-e > :nth-child(2) {
   flex: 3;
   min-width: 25%;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.e-flex-content > :nth-child(2) > :not(:last-child) {
+.ef-e > :nth-child(2) > :not(:last-child) {
   margin-bottom: 6px;
 }
 /*center center*/
-.c-flex-content {
+.ef-center {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   height: 100%;
-}
-.c-flex-content > * {
-  margin: 6px;
 }
 /*H*/
 .h-flex-content {

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="easy-flex.css">
+<style>
+    body{
+        background-color: #eee;
+    }
+    .pill-mother >*{
+        width: 400px;
+        height: 400px;
+        margin: 6px;
+    }
+</style>
+<body>
+    <efr>
+        <ef1 style="background:chocolate;">ef1</ef1>
+        <ef2 style="background:burlywood;">ef2</ef2>
+        <ef1 style="background:yellowgreen;">ef1</ef1>
+    </efr>
+
+    <hr>
+
+    <efc >
+        <ef1 style="background:chocolate;">ef1</ef1>
+        <ef2 style="background:burlywood;">ef2</ef2>
+        <ef1 style="background:yellowgreen;">ef1</ef1>
+    </efc>
+
+    <hr>
+
+    <efr style="height: 100px;">
+        <efc >
+            <ef2 style="background:chocolate;">efc ef2</ef2>
+            <ef1 style="background:burlywood;">efc ef1</ef1>
+        </efc>
+        <efc class="ef1">
+            <ef1 style="background:yellowgreen;">efc ef1</ef1>
+            <ef2 style="background-color: cornflowerblue;">efc ef2</ef2>
+        </efc>
+    </efr>
+
+    <hr>
+    
+    <efc>
+        <efr>
+            <ef2 style="background:chocolate;">efr ef2</ef2>
+            <ef1 style="background:burlywood;">efr ef1</ef1>
+        </efr>
+        <efr>
+            <ef1 style="background:yellowgreen;">efr ef1</ef1>
+            <ef2 style="background-color: cornflowerblue;">efr ef2</ef2>
+        </efr>
+    </efc>
+
+    <hr>
+
+    <efr class="pill-mother">
+        <div class="ef-t">
+            <header style="background-color:chocolate">T</header>
+            <div style="background-color: burlywood;">
+                <p>anything</p>
+                <p>
+                    hello world
+                </p>
+                <div style="flex:1;background-color: yellowgreen;" class="ef-center">
+                    <div style="background-color: cornsilk;">I am center</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ef-pi">
+            <div style="background-color:chocolate">pi</div>
+            <div style="background-color: burlywood;">
+                <div style="flex:0;background-color: aquamarine;">hey</div>
+                <div style="flex:1;background-color: cornflowerblue;">to</div>
+            </div>
+        </div>
+        
+        <div class="ef-pi">
+            <div style="background-color:chocolate">pi</div>
+            <div style="background-color: burlywood;">
+                <div style="flex:0;background-color: aquamarine;">hey</div>
+                <div style="flex:1;background-color: cornflowerblue;">to</div>
+            </div>
+            <div style="background-color:chocolate">
+                <footer> or add footer</footer>
+            </div>
+        </div>
+
+        <div class="ef-e">
+            <div style="background-color:chocolate">E</div>
+            <div style="background-color: burlywood;">
+                <div style="background-color: aquamarine;">1</div>
+                <div style="background-color: cornflowerblue;">2</div>
+                <div style="flex:1;background-color: yellowgreen;" class="ef-center">
+                    <div style="background-color: cornsilk;">I am center</div>
+                </div>
+            </div>
+        </div>
+
+    </efr>
+
+    <efc style="height: 400px;width: 300px;">
+        <div class="efr">
+            <div style="background:burlywood;">header</div>
+            <ef1 style="background-color: cornflowerblue;">234</ef1>
+        </div>
+        <div class="efr ef1">
+            <efc style="background:chocolate;">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </efc>
+            <ef1 style="background:yellowgreen;">
+                <article>
+                    aritcle
+                </article>
+            </ef1>
+        </div>
+    </efc>
+
+
+
+    
+
+
+</body>
+</html>
